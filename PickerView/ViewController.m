@@ -45,10 +45,10 @@
     [self.jmPickerView jm_pickerViewAutoLayout];// 必须调用 为了布局而已
     
     self.jmPickerView.systemSeparatorLineColor = [UIColor orangeColor];
-    self.jmPickerView.rightTitleInPickerView = @"右";
-    self.jmPickerView.leftTitleInPickerView = @"左";
+    self.jmPickerView.rightTitleInPickerView = @"单位";
+    self.jmPickerView.leftTitleInPickerView = @"单位";
     self.jmPickerView.showSystemSeparatorLine = YES;
-    self.jmPickerView.title = @"文本标题";
+    self.jmPickerView.title = @"设置标题";
 }
 
 - (void)viewWillAppear:(BOOL)animated {

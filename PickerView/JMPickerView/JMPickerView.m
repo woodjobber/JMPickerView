@@ -268,7 +268,7 @@ static NSString * const JMPickerViewReusableCellNibNamed = @"JMPickerViewReusabl
 #pragma mark UIPickerViewDelegate
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    
+     NSLog(@"dd %ld,%ld",row,component);
     if (self.delegate && [self.delegate respondsToSelector:@selector(jm_pickerView:didSelectRow:inComponent:)]) {
         [self.delegate jm_pickerView:self didSelectRow:row inComponent:component];
     }
@@ -319,7 +319,7 @@ static NSString * const JMPickerViewReusableCellNibNamed = @"JMPickerViewReusabl
     if (self.delegate && [self.delegate respondsToSelector:@selector(jm_pickerView:attributedTitleForRow:forComponent:)]) {
         reusableCell.attributedTitle = [self.delegate jm_pickerView:self attributedTitleForRow:row forComponent:component];
     }
-   
+    NSLog(@"%ld,%ld",row,component);
     return reusableCell;
 }
 
