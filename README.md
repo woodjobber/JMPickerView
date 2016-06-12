@@ -174,4 +174,12 @@
 ```
 # 效果图
 
+![image](https://github.com/woodjobber/JMPickerView/blob/master/JMPickerView.gif)
 
+# 总结
+
+An email <woodjobber@outlook.com> link.
+
+博客：[博客链接](woodjobber.github.io)
+
+微信公众号：嘀咕嘀咕（iosSharers）
