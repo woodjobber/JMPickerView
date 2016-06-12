@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-Qf-Is5">
+                                <rect key="frame" x="0.0" y="470" width="375" height="197"/>
+                                <color key="backgroundColor" red="0.96071070432662964" green="0.96082574129104614" blue="0.96067172288894653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="Yc5-24-XzS"/>
+                                </constraints>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYt-TZ-cqv">
+                                <rect key="frame" x="163" y="34" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showSepratorLine:" destination="BYZ-38-t0r" eventType="valueChanged" id="V9x-1f-NIq"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市显示区域" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9h-xM-NRS">
+                                <rect key="frame" x="10" y="96" width="355" height="50"/>
+                                <color key="backgroundColor" red="0.26215525090000003" green="1" blue="0.70567985369999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jzs-X7-HAn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.12113603204488754" green="0.033431205898523331" blue="0.96493262052536011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9612770676612854" green="0.10660321265459061" blue="0.013761688955128193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g2W-Qf-Is5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="16a-mV-dMa"/>
+                            <constraint firstItem="cYt-TZ-cqv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="5ly-wC-u78"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g2W-Qf-Is5" secondAttribute="bottom" id="6ID-3v-mpT"/>
+                            <constraint firstItem="x9h-xM-NRS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="G4D-k4-zcq"/>
+                            <constraint firstItem="cYt-TZ-cqv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LjK-k6-V2A"/>
+                            <constraint firstAttribute="trailing" secondItem="x9h-xM-NRS" secondAttribute="trailing" constant="10" id="rcc-46-ZqV"/>
+                            <constraint firstItem="x9h-xM-NRS" firstAttribute="top" secondItem="cYt-TZ-cqv" secondAttribute="bottom" constant="31" id="z82-pQ-IUi"/>
+                            <constraint firstAttribute="trailing" secondItem="g2W-Qf-Is5" secondAttribute="trailing" id="zw4-fS-v12"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="x9h-xM-NRS" id="3oz-xb-OhG"/>
+                        <outlet property="mPickerView" destination="g2W-Qf-Is5" id="J0j-Uk-y4t"/>
+                        <outlet property="showSwitch" destination="cYt-TZ-cqv" id="npS-VE-ZwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.5" y="379.5"/>
+        </scene>
+    </scenes>
+</document>
